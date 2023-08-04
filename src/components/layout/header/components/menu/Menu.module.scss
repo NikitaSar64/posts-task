@@ -1,0 +1,18 @@
+.menuItem {
+  list-style-type: none;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  font-weight: 500;
+  line-height: 1rem;
+
+  display: inline-block;
+  & + & {
+    margin-left: 2rem;
+  }
+  & > div {
+    height: 57.5px;
+  }
+}

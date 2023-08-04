@@ -1,0 +1,86 @@
+@import "@styles/variables.scss";
+
+.post {
+  color: $gray;
+
+  max-width: 22.5rem;
+
+  transition: box-shadow 0.4s cubic-bezier(0, 0.8, 0, 1);
+}
+
+.img {
+  display: block;
+  object-fit: cover;
+
+  width: 100%;
+}
+
+.img,
+.tag,
+.title,
+.info {
+  margin-bottom: 1rem;
+}
+
+.tag {
+  color: $red;
+
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 0.8125rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+
+  color: black;
+}
+
+.info {
+  display: flex;
+
+  font-size: 0.75rem;
+  span + span {
+    padding-left: 0.8075rem;
+
+    position: relative;
+    &::before {
+      content: "";
+
+      width: 3px;
+      height: 3px;
+
+      display: inline-block;
+
+      background-color: $gray;
+
+      border-radius: 50%;
+
+      position: absolute;
+
+      top: 50%;
+      left: 0.3125rem;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.author {
+  color: black;
+
+  font-weight: 500;
+}
+
+.text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+@media (max-width: $lg) {
+  .post {
+    max-width: 20.9375rem;
+  }
+}

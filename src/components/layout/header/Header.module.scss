@@ -1,0 +1,63 @@
+@import "@styles/variables.scss";
+
+.header {
+  position: sticky;
+  top: -82.5px;
+
+  background-color: white;
+
+  z-index: 5;
+
+  transition: top 0.4s ease;
+}
+
+.hideMenu {
+  top: -140px;
+}
+
+.top,
+.bottom {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.top {
+  height: 81.5px;
+}
+
+.bottom {
+  height: 57.5px;
+}
+
+.headerContainer {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.search {
+  position: absolute;
+
+  top: 50%;
+  right: 1.25rem;
+
+  transform: translateY(-50%);
+}
+
+.burger {
+  position: absolute;
+
+  top: 50%;
+  left: 1.25rem;
+
+  transform: translateY(-50%);
+}
+
+@media (max-width: 600px) {
+  .bottom {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+.input {
+  height: 100%;
+  width: 30px;
+  padding: 0px 15px;
+  border: none;
+  border-left: 1px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: width 0.4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.btn {
+  background: url("../../assets/images/search.svg") no-repeat center center;
+  height: 35px;
+  width: 30px;
+
+  display: block;
+
+  cursor: pointer;
+
+  background-color: white;
+}
+
+.input:hover {
+  border: 1px solid gray;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.input:focus {
+  background-color: white;
+  width: 300px;
+  z-index: 1;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+
+.input:focus + .btn {
+  position: relative;
+  z-index: 5;
+  border: 1px solid gray;
+  border-left: none;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
